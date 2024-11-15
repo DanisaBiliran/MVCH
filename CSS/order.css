@@ -1,0 +1,19 @@
+body{
+    background-color: #F5F6FA;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+}
+
+table td, table tr{
+    border: 1px solid grey;
+    vertical-align: top;
+}
+
+table tr{
+    padding-right: 10px;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+}
