@@ -14,7 +14,7 @@
                 <!-- ITEM -->
                 <td class="big-cells" rowspan="4">
                     <div class="big-cells-div-title">Item</div>
-                    <textarea name="item" class="big-cells-div-content"></textarea>
+                    <textarea name="item" class="big-cells-div-content" required></textarea>
                 </td>
 
                 <!-- STATUS -->
@@ -22,8 +22,9 @@
                     <div class="small-cells-div">
                         <label for="status" class="small-cells-div-title">Status: </label>
                         <select name="status" class="small-cells-div-content">
-                            <option value="a">aladnoo</option>
-                            <option value="b">b</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Cancelled">Cancelled</option>
+                            <option value="Completed">Completed</option>
                         </select>
                     </div>
                 </td>
@@ -43,8 +44,8 @@
                     <div class="small-cells-div">
                         <label for="order-type" class="small-cells-div-title">Order Type: </label>
                         <select name="order-type" class="small-cells-div-content">
-                            <option value="a">aladnoo</option>
-                            <option value="b">b</option>
+                            <option value="Diagnostic">Diagnostic</option>
+                            <option value="Drugs">Drugs</option>
                         </select>
                     </div>
                 </td>
@@ -74,7 +75,7 @@
             <tr>
                 <!-- CONFIRM BUTTON -->
                 <td colspan="3">
-                    <br><br>
+                    <br>
                     <button id="confirm" type="submit">Confirm</button>
                 </td>
             </tr>
