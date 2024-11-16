@@ -12,38 +12,71 @@
         <table>
             <tr>
                 <!-- ITEM -->
-                <td rowspan="4">a
-                    
+                <td class="big-cells" rowspan="4">
+                    <div class="big-cells-div-title">Item</div>
+                    <textarea name="item" class="big-cells-div-content"></textarea>
                 </td>
 
                 <!-- STATUS -->
-                <td>b</td>
+                <td class="small-cells">
+                    <div class="small-cells-div">
+                        <label for="status" class="small-cells-div-title">Status: </label>
+                        <select name="status" class="small-cells-div-content">
+                            <option value="a">aladnoo</option>
+                            <option value="b">b</option>
+                        </select>
+                    </div>
+                </td>
 
                 <!-- ORDERED BY -->
-                <td>c</td>
+                <td class="small-cells">
+                    <div class="small-cells-div">
+                        <label for="ordered-by" class="small-cells-div-title">Ordered by: </label>
+                        <input class="small-cells-div-content" type="text" placeholder="Patient ID" required>
+                    </div>
+                </td>
             </tr>
     
             <tr>
                 <!-- ORDER TYPE -->
-                <td>b</td>
+                <td class="small-cells">
+                    <div class="small-cells-div">
+                        <label for="order-type" class="small-cells-div-title">Order Type: </label>
+                        <select name="order-type" class="small-cells-div-content">
+                            <option value="a">aladnoo</option>
+                            <option value="b">b</option>
+                        </select>
+                    </div>
+                </td>
 
                 <!-- WRITTEN BY -->
-                <td rowspan="3">c</td>
+                <td class="big-cells" rowspan="3">
+                    <div class="big-cells-div-title">Written by:</div>
+                    <textarea name="written-by" class="big-cells-div-content"></textarea>
+                </td>
             </tr>
     
             <tr>
                 <!-- ORDER DATE -->
-                <td>b</td>
+                <td class="small-cells">
+                    <div class="small-cells-div">
+                        <label for="order-date" class="small-cells-div-title">Order Date: </label>
+                        <input class="small-cells-div-content" type="date">
+                    </div>
+                </td>
             </tr>
     
             <tr>
                 <!-- blank, space -->
-                <td>b</td>
+                <td id="none"></td>
             </tr>
     
             <tr>
                 <!-- CONFIRM BUTTON -->
-                <td colspan="3">a</td>
+                <td colspan="3">
+                    <br><br>
+                    <button id="confirm" type="submit">Confirm</button>
+                </td>
             </tr>
         </table>
 
