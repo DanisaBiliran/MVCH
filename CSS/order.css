@@ -1,6 +1,9 @@
 body{
     background-color: #f2f3f5;
+    font-size: larger;
 }
+
+
 
 table{
     width: 90%;
@@ -39,6 +42,7 @@ table td, table tr{
     box-sizing: border-box;
     resize: vertical; 
     border-radius: 0 0 8px 8px;
+    font-size: large;
 }
 
 
@@ -66,12 +70,13 @@ table td, table tr{
     width: 100%;
     text-wrap: balance;
     border: 1px solid black;
+    font-size: large;
 }
 
 /* CELLS USED AS AN EMPTY SPACE CHUCHU */
 #none{
     border: none;
-    height: 20%;
+    height: 30%;
 }
 
 /* CONFIRM BUTTON */
@@ -81,7 +86,7 @@ table td, table tr{
     border: none;
     border-radius: 6px;
     text-align: center;
-    font-size: medium;
+    font-size: large;
 }
 
 #confirm:hover{
