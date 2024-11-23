@@ -1,50 +1,71 @@
-body{
+body {
     background-color: #F5F6FA;
 }
 
-form{
+form {
+    max-width: 600px; /* Limit the maximum width */
     width: 90%;
-    height: auto;
     margin: auto;
     border-radius: 8px;
     padding: 10px;
     background-color: #752BDF;
     color: white;
+    font-size: large;
+}
+
+#table-inside-form {
+    width: 100%;
+}
+
+/* #table-inside-form td,  #table-inside-form tr {
+    border: 1px solid black;
+} */
+
+/* FOR THE WIDTH OF THE CELLS CONTAINING THE LABELS */
+.cells-for-small-labels {
+    width: 35%;
+}
+
+/* FOR THE WIDTH OF INPUT FIELDS */
+.small-input-box {
+    width: calc(100% - 20px);
+    font-size: large;
+}
+
+.big-input-box {
+    width: calc(92% - 20px);
+}
+
+.big-input-box {
+    height: 100px;
 }
 
 /* TEXTS THAT SHOULD BE BLACK-COLORED */
-.black-colored-texts{
+.black-colored-texts {
     color: black;
     background-color: rgba(176, 175, 175, 0.815);
 }
 
 /* Patient's Details (title) */
-#title{
+#title {
     color: white;
     text-align: center;
 }
 
 /* General Info, Medical Details */
-h3{
-    margin: 0 0 5px 0;
+h2 {
+    margin-bottom: 5px;
     text-decoration: underline;
+    white-space: nowrap; 
 }
 
 /* FOR INDENTIONS */
-.input{
+.input {
     margin-left: 20px;
 }
 
-.radio-options{
-    margin-left: 34px;
-}
-
-textarea{
+textarea {
     margin-left: 40px;
-    margin-bottom: 6px;
-    height: 110px;
-    width: 400px;
-
 }
 
 /* LINE SPACING */
@@ -53,25 +74,40 @@ form input, form label {
     margin-bottom: 2px;
 }
 
-/* SUBMIT BUTTON (to center it, horizontally)*/
-#submit-button-container{
+/* SUBMIT BUTTON (to center it, horizontally) */
+#submit-button-container {
     width: 100%;
     height: auto;
-    text-align: center;
+    text-align: center; /* Center submit button on smaller screens */
 }
 
 /* actual SUBMIT BUTTON */
-#submit-button{
+#submit-button {
     background-color: #00D89E;
     padding: 5px;
     border: none;
     border-radius: 6px;
-    text-align: center;
-    font-size: medium;
 }
 
-#submit-button:hover{
+#submit-button:hover {
     background-color: #03aa7e;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cells-for-small-labels {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
 
+    .small-input-box {
+        width: calc(100% - 20px); 
+        margin-left: 0; 
+    }
+
+    .big-input-box {
+        width: calc(92% - 20px); 
+        /* margin-left: 0;  */
+    }
+}
